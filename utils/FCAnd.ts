@@ -401,7 +401,7 @@ export namespace FCAnd {
                                 });
                                 return retval;
                             }
-                        } catch (e) {
+                        } catch (e : any) {
                             DMLog.d(tag, 'overload.implementation exception:\t' + overload.methodName + "\t" + e.toString());
                         }
                     });
@@ -473,7 +473,7 @@ export namespace FCAnd {
                     .setLenient()
                     .create();
                 resstr = gson.toJson(obj);
-            } catch (e) {
+            } catch (e : any) {
                 DMLog.e('gson.toJson', 'exceipt: ' + e.toString());
                 resstr = FCAnd.parseObject(obj);
             }
@@ -504,7 +504,7 @@ export namespace FCAnd {
                 res[field.getName()] = fdata;
             }
             return JSON.stringify(res);
-        } catch (e) {
+        } catch (e : any) {
             return "parseObject except: " + e.toString();
         }
 
@@ -603,7 +603,7 @@ export namespace FCAnd {
                     DMLog.e(tag, `${clsname} not found: ${e}`);
                 }
             }
-        } catch (e) {
+        } catch (e : any) {
             DMLog.e(tag, e.toString());
         }
 
@@ -675,7 +675,7 @@ export namespace FCAnd {
                             DMLog.i(tag, '\n');
                             DMLog.i(tag, JSON.stringify(data));
                             FCAnd.showNativeStacks(this.context);
-                        } catch (err) {
+                        } catch (err : any) {
                             DMLog.e(tag, err);
                         }
                     },
@@ -762,7 +762,7 @@ export namespace FCAnd {
                         callback(cls1);
                     }
 
-                } catch (e) {
+                } catch (e : any) {
                     DMLog.e(tag, e.toString());
                 }
             },
@@ -779,21 +779,28 @@ export namespace FCAnd {
      * @param callback
      */
     export function attachWhenSoLoad(soname: string, offsetAddr: number, callback: InvocationListenerCallbacks | InstructionProbeCallback) {
+        whenSoLoad(soname, function (mod: Module) {
+            Interceptor.attach(mod.base.add(offsetAddr), callback);
+        });
+    }
+
+    export function whenSoLoad(soname: string, callback: (mod: Module) => void) {
         const VERSION = Java.use('android.os.Build$VERSION');
         let dlopenFuncName = "android_dlopen_ext";
         if (VERSION.SDK_INT.value <= 23) { // 6.0 以上版本
             dlopenFuncName = "dlopen";
         }
-        Interceptor.attach(Module.findExportByName(null, dlopenFuncName) !, {
+        var so_listener = Interceptor.attach(Module.findExportByName(null, dlopenFuncName) !, {
             onEnter: function (args) {
                 this.sopath = args[0].readCString();
             },
             onLeave: function (retval) {
                 let sopath = this.sopath;
-                DMLog.d('attachWhenSoLoad dlopen', `sopath: ${sopath}`);
+                DMLog.d('WhenSoLoad dlopen', `sopath: ${sopath}`);
                 if (null != sopath && sopath.indexOf(soname) > -1) {
                     let mod = Module.load(sopath);
-                    Interceptor.attach(mod.base.add(offsetAddr), callback);
+                    callback(mod);
+                    so_listener.detach();
                 }
             }
         });
