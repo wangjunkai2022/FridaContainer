@@ -1,0 +1,1069 @@
+main2:  4
+main2:  null
+main2.res:  ms_com.sankuai.meituan.takeoutnew
+main2:  5
+main2:  null
+main2.res:  ppd_com.sankuai.meituan.takeoutnew.xbt
+main2:  1
+main2:  null
+main2.res:  com.sankuai.meituan.takeoutnew
+main2:  2
+main2:  null
+main2.res:  android.app.ContextImpl@b7dfe1a
+main2:  6
+main2:  null
+main2.res:  5.15.6
+main2:  41
+main2:  v5_root_12,200,0
+main2.res:  null
+main2:  3
+main2:  null
+main2.res:  null
+main2:  41
+main2:  v5_rsa_enc_time,200,1
+main2.res:  null
+main2:  3
+main2:  null
+main2.res:  com.meituan.android.common.mtguard.b$a@84d8e91
+main2:  52
+main2:  start collect 240
+main2.res:  null
+main2:  39
+main2:  null
+main2:  41
+main2.res:  com.meituan.android.common.dfingerprint.store.SyncStoreManager@ae067fc
+main2:  v5_root_12,200,0
+main2:  52
+main2:  collect 240 finish
+main2.res:  null
+main2.res:  null
+main2:  32
+main2:  null
+main2.res:  
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  29
+main2:  null
+main2.res:  0000000000000E246BFD7F3C2436582802A2E73CB0E00A167149147357083811
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  19
+main2:  null
+main2:  37
+main2:  null
+main2.res:  
+main2.res:  BMI160 accelerometer
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  17
+main2:  null
+main2.res:  Bosch
+main2:  9
+main2:  null
+main2.res:  0
+main2:  26
+main2:  null
+main2.res:  [5,100]
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  13
+main2:  null
+main2:  51
+main2:  null
+main2.res:  2
+main2.res:  Google
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  11
+main2:  null
+main2.res:  1
+main2:  28
+main2:  null
+main2.res:  1675607296624
+main2:  29
+main2:  null
+main2.res:  0000000000000E246BFD7F3C2436582802A2E73CB0E00A167149147357083811
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  46
+main2:  null
+main2.res:  0.0000000000|0.0000000000
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  34
+main2:  null
+main2:  41
+main2:  v5_frida_6,200,0
+main2.res:  null
+main2.res:  []
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  35
+main2:  null
+main2.res:  []
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  58
+main2:  null
+main2.res:  
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  10
+main2:  null
+main2.res:  40.2
+main2:  12
+main2:  null
+main2:  61
+main2:  v5_siua_collect_time_first,200,736,0,571
+main2.res:  null
+main2:  41
+main2:  v5_magisk_7,200,0
+main2.res:  null
+main2.res:  [{"acc_pkg":"com.wandoujia.phoenix2","acc_name":"com.pp.assistant.accessibility.AccessibilityService","acc_des":"【自动装】可以在豌豆荚安装和升级应用时，无需手动点击所需的按钮，确保应用顺利安装\n\n【自动装】无需获取手机的Root权限，支持Android 4.1以上系统。只需您打开服务，弹框提示需要您的授权。豌豆荚承诺不会通过本功能收集您的隐私信息。\n\n如果你强制关闭豌豆荚，或使用内存清理工具关闭豌豆荚，会造成【自动装】功能被系统关闭。为保证正常使用，请将豌豆荚放入清理白名单中。\n\n如果您对此有任何疑问，请加入QQ群联系我们：311140737","acc_caps":["CAPABILITY_CAN_RETRIEVE_WINDOW_CONTENT"],"acc_enable":0},{"acc_pkg":"com.wj.robot","acc_name":"com.stardust.autojs.core.accessibility.AccessibilityService","acc_des":"请授予辅助权限，获取无障碍权限；后续每次启动都会需要你的授权","acc_caps":["CAPABILITY_CAN_RETRIEVE_WINDOW_CONTENT"],"acc_enable":1}]
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  14
+main2:  null
+main2.res:  AAAAAAAAAAAAAAAAKBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=
+
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  15
+main2:  null
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2.res:  {"name":"TMD4903 Light Sensor","vendor":"AMS","data":[127.32759]}
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  69
+main2:  null
+main2:  59
+main2:  null
+main2.res:  0
+main2.res:  [android.app.ActivityManager$RunningAppProcessInfo@2854997]
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  18
+main2:  null
+main2.res:  Gravity
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  43
+main2:  null
+main2.res:  ru.maximoff.apktool-bin.mt.plus-com.androidEngine.Pointer-com.boolbird.keepalive-com.deepl.mobiletranslator-com.example.jnitrace-com.jifen.qukan-com.jingdong.app.mall-com.junge.algorithmAide-com.kyex.zbpb
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  41
+main2:  v5_env_collect_time_first,200,1967
+main2.res:  null
+main2:  32
+main2:  null
+main2:  51
+main2:  null
+main2.res:  2
+main2.res:  {"health":2,"level":100,"plugged":1,"present":true,"scale":100,"status":5,"telephony":"Li-ion","temperature":2,"voltage":4401}
+main2:  9
+main2:  null
+main2.res:  0
+main2:  59
+main2:  null
+main2.res:  0
+main2:  44
+main2:  null
+main2.res:  com.android.chrome-com.android.settings-com.android.vending-com.google.android.GoogleCamera-com.google.android.apps.docs-com.google.android.apps.maps-com.google.android.apps.messaging-com.google.android.apps.photos-com.google.android.calendar-com.google.android.contacts
+main2:  51
+main2:  null
+main2:  26
+main2:  null
+main2.res:  [5,100]
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2:  59
+main2:  null
+main2.res:  0
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  42
+main2:  null
+main2.res:  67
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  11
+main2:  null
+main2.res:  1
+main2:  28
+main2:  null
+main2:  51
+main2:  null
+main2.res:  2
+main2.res:  1675607296624
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  59
+main2:  null
+main2.res:  0
+main2:  46
+main2:  null
+main2.res:  0.0000000000|0.0000000000
+main2:  58
+main2:  null
+main2.res:  
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  52
+main2:  start collect 107
+main2.res:  null
+main2:  52
+main2:  collect 107 finish
+main2.res:  null
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  52
+main2:  start collect 111
+main2.res:  null
+main2:  52
+main2:  collect 111 finish
+main2.res:  null
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2:  51
+main2:  null
+main2:  20
+main2:  null
+main2.res:  null
+main2:  21
+main2:  null
+main2.res:  null
+main2.res:  2
+main2.res:  2
+main2:  22
+main2:  null
+main2.res:  null
+main2:  23
+main2:  null
+main2.res:  null
+main2:  24
+main2:  null
+main2.res:  bus
+main2:  25
+main2:  null
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  49
+main2:  null
+main2.res:  {"accuracy":33.0,"verticalAccuracyMeters":0.0,"altitude":0.0,"speed":0.0,"provider":"gears","time":1675608982104}
+main2.res:  e246bfd7f3c2436582802a2e73cb0e00a167149147357083811
+main2:  51
+main2:  null
+main2:  27
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  mtguard
+main2.res:  0
+main2:  46
+main2:  null
+main2.res:  39.9770850000|116.3086510000
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2:  66
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2.res:  0
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2:  59
+main2:  null
+main2.res:  0
+main2:  45
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  [ApplicationInfo{97f1865 com.android.chrome}, ApplicationInfo{7aa593a com.android.settings}, ApplicationInfo{793d9eb com.android.vending}, ApplicationInfo{d1b9348 com.google.android.GoogleCamera}, ApplicationInfo{d4dd5e1 com.google.android.apps.docs}, ApplicationInfo{e54cf06 com.google.android.apps.maps}, ApplicationInfo{5d429c7 com.google.android.apps.messaging}, ApplicationInfo{6fa9bf4 com.google.android.apps.photos}, ApplicationInfo{6f0ef1d com.google.android.calendar}, ApplicationInfo{aded592 com.google.android.contacts}, ApplicationInfo{6df9b63 com.google.android.deskclock}, ApplicationInfo{1f8360 com.google.android.dialer}, ApplicationInfo{3b26019 com.google.android.gm}, ApplicationInfo{890b8de com.google.android.music}, ApplicationInfo{7a68abf com.google.android.videos}, ApplicationInfo{ee9758c com.google.android.youtube}, ApplicationInfo{17fe4d5 ru.maximoff.apktool}, ApplicationInfo{ceb84ea com.android.documentsui}, ApplicationInfo{9c313db com.google.android.apps.wallpaper}, ApplicationInfo{e7e5e78 com.google.android.calculator}, ApplicationInfo{566f951 com.google.android.googlequicksearchbox}, ApplicationInfo{27505b6 bin.mt.plus}, ApplicationInfo{45512b7 com.androidEngine.Pointer}, ApplicationInfo{476ea24 com.boolbird.keepalive}, ApplicationInfo{dd0d98d com.deepl.mobiletranslator}, ApplicationInfo{443c742 com.example.jnitrace}, ApplicationInfo{69e2353 com.jifen.qukan}, ApplicationInfo{54a8490 com.jingdong.app.mall}, ApplicationInfo{c7e8189 com.junge.algorithmAide}, ApplicationInfo{64b158e com.kyex.zbpb}, ApplicationInfo{85da1af com.kyex.zbpb}, ApplicationInfo{37b59bc com.lahm.easyprotector}, ApplicationInfo{444ad45 com.midu.zhinanzhen}, ApplicationInfo{666fc9a com.netease.newsreader.activity}, ApplicationInfo{3eca9cb com.nike.omega}, ApplicationInfo{687d8c1 com.opennet.android.ihjet903572}, ApplicationInfo{2284866 com.phoneinfo.changerpro}, ApplicationInfo{61a17a7 com.sanfengandroid.datafilter}, ApplicationInfo{e7b2454 com.sankuai.meituan.takeoutnew}, ApplicationInfo{c783ffd com.shizhuang.duapp}, ApplicationInfo{d6084f2 com.sogou.activity.src}, ApplicationInfo{fc68743 com.spark.xposeddy}, ApplicationInfo{59031c0 com.ss.android.ugc.aweme}, ApplicationInfo{80ddef9 com.sun.dyCapture}, ApplicationInfo{56dfe3e com.tencent.mm}, ApplicationInfo{540549f com.tencent.mobileqq}, ApplicationInfo{826a9ec com.thinkive.investxdtx}, ApplicationInfo{8c471b5 com.topjohnwu.magisk}, ApplicationInfo{d47c04a com.tsng.hidemyapplist}, ApplicationInfo{75f9bbb com.tunnelworkshop.postern}, ApplicationInfo{2ca78d8 com.virjar.ratel.manager}, ApplicationInfo{177431 com.wandoujia.phoenix2}, ApplicationInfo{e499716 com.wj.robot}, ApplicationInfo{2623897 com.xsyx.user}, ApplicationInfo{cda4a84 com.xunmeng.pinduoduo}, ApplicationInfo{1be226d com.yaerin.xposed.hide}, ApplicationInfo{9c00ea2 com.yitantech.gaigai}, ApplicationInfo{e87c733 com.yixia.videoeditor}, ApplicationInfo{2f38af0 io.busniess.va}, ApplicationInfo{ba77869 me.weishu.leoric}, ApplicationInfo{73472ee org.cheatengine.cegui}, ApplicationInfo{e6da38f org.lsposed.manager}, ApplicationInfo{c1e661c org.sandroproxy.drony}, ApplicationInfo{1b63225 ratel.crack.com.shizhuang.duapp}, ApplicationInfo{b78cffa ratel.crack.com.ss.android.ugc.aweme}, ApplicationInfo{72ae9ab top.niunaijun.blackdexa32}, ApplicationInfo{5b9c808 top.niunaijun.blackdexa64}]
+main2:  51
+main2:  null
+main2:  52
+main2.res:  2
+main2:  start collect 240
+main2.res:  null
+main2:  52
+main2:  collect 240 finish
+main2.res:  2
+main2.res:  null
+main2:  33
+main2:  null
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2.res:  
+main2:  51
+main2:  null
+main2.res:  2
+main2:  59
+main2:  null
+main2.res:  0
+main2:  37
+main2:  null
+main2.res:  
+main2:  38
+main2:  null
+main2.res:  -1
+main2:  50
+main2:  null
+main2.res:  18
+main2:  53
+main2:  null
+main2.res:  err_e
+main2:  55
+main2:  null
+main2.res:  err_e
+main2:  41
+main2:  v5_xid_collect_time_first,200,6333
+main2.res:  null
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  51
+main2:  null
+main2.res:  2
+main2:  62
+main2:  null
+main2.res:  北京
+main2:  25
+main2:  null
+main2.res:  e246bfd7f3c2436582802a2e73cb0e00a167149147357083811
+main2:  38
+main2:  null
+main2.res:  -1
+main2:  29
+main2:  null
+main2.res:  0000000000000E246BFD7F3C2436582802A2E73CB0E00A167149147357083811
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  25
+main2:  null
+main2.res:  e246bfd7f3c2436582802a2e73cb0e00a167149147357083811
+main2:  29
+main2:  null
+main2.res:  0000000000000E246BFD7F3C2436582802A2E73CB0E00A167149147357083811
+main2:  38
+main2:  null
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  59
+main2:  null
+main2.res:  -1
+main2:  50
+main2:  null
+main2.res:  0
+main2.res:  65
+main2:  60
+main2:  null
+main2.res:  0
+main2:  58
+main2:  null
+main2.res:  1675647559305
+main2:  70
+main2:  null
+main2.res:  com.sankuai.meituan.takeoutnew
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  30
+main2:  null
+main2.res:  {"renderer":"Adreno (TM) 530","vendor":"Qualcomm","version":"OpenGL ES 3.2 V@258.0 (GIT@2941438, I916dfac403) (Date:10\/03\/17)"}
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  63
+main2:  null
+main2.res:  []
+main2:  67
+main2:  null
+main2.res:  []
+main2:  68
+main2:  null
+main2.res:  {"acc":[],"mag":[],"gyr":[]}
+main2:  52
+main2:  7b201e0000-7b20297000 r-xp 00000000 103:11 700                           /system/lib64/libart.so
+
+main2.res:  null
+main2:  52
+main2:  7b20297000-7b20299000 rwxp 000b7000 103:11 700                           /system/lib64/libart.so
+
+main2.res:  null
+main2:  52
+main2:  7b20299000-7b2039e000 r-xp 000b9000 103:11 700                           /system/lib64/libart.so
+
+main2.res:  null
+main2:  52
+main2:  7b2039e000-7b2039f000 rwxp 001be000 103:11 700                           /system/lib64/libart.so
+
+main2.res:  null
+main2:  52
+main2:  7b2039f000-7b20454000 r-xp 001bf000 103:11 700                           /system/lib64/libart.so
+
+main2.res:  null
+main2:  52
+main2:  7b20454000-7b20456000 rwxp 00274000 103:11 700                           /system/lib64/libart.so
+
+main2.res:  null
+main2:  52
+main2:  7b20456000-7b20714000 r-xp 00276000 103:11 700                           /system/lib64/libart.so
+
+main2.res:  null
+main2:  52
+main2:  7b20714000-7b20715000 r-xp 00534000 103:11 700                           /system/lib64/libart.so
+
+main2.res:  null
+main2:  52
+main2:  7b20715000-7b207e0000 r-xp 00535000 103:11 700                           /system/lib64/libart.so
+
+main2.res:  null
+main2:  52
+main2:  7b207e0000-7b207f0000 r--p 005ff000 103:11 700                           /system/lib64/libart.so
+
+main2.res:  null
+main2:  52
+main2:  7b207f0000-7b207f3000 rw-p 0060f000 103:11 700                           /system/lib64/libart.so
+
+main2.res:  null
+main2:  51
+main2:  null
+main2.res:  1
+main2:  52
+main2:  7ba381a000-7ba3834000 r-xp 00000000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba3834000-7ba3836000 rwxp 0001a000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba3836000-7ba3837000 r-xp 0001c000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba3837000-7ba3838000 rwxp 0001d000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba3838000-7ba3839000 r-xp 0001e000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba3839000-7ba383a000 rwxp 0001f000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba383a000-7ba3841000 r-xp 00020000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba3841000-7ba3843000 rwxp 00027000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba3843000-7ba3886000 r-xp 00029000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba3886000-7ba3887000 rwxp 0006c000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba3887000-7ba38e2000 r-xp 0006d000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba38e3000-7ba38e9000 r--p 000c8000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba38e9000-7ba38eb000 rw-p 000ce000 103:11 592                           /system/lib64/libc.so
+
+main2.res:  null
+main2:  52
+main2:  7ba4dc2000-7ba4dc4000 r-xp 00000000 103:11 416                           /system/lib64/libdl.so
+
+main2.res:  null
+main2:  52
+main2:  7ba4dc4000-7ba4dc5000 r--p 00001000 103:11 416                           /system/lib64/libdl.so
+
+main2.res:  null
+main2:  52
+main2:  7ba4dc5000-7ba4dc6000 rw-p 00002000 103:11 416                           /system/lib64/libdl.so
+
+main2.res:  null
+main2:  54
+main2:  null
+main2.res:  64
+main2:  51
+main2:  null
+main2.res:  1
+main2:  51
+main2:  null
+main2.res:  1
+main2:  66
+main2:  null
+main2.res:  0
+main2:  69
+main2:  null
+main2.res:  [android.app.ActivityManager$RunningAppProcessInfo@d67a08c, android.app.ActivityManager$RunningAppProcessInfo@5233d5, android.app.ActivityManager$RunningAppProcessInfo@a8927ea]
+main2:  70
+main2:  null
+main2.res:  com.sankuai.meituan.takeoutnew
+main2:  41
+main2:  v5_device_info_collect_time_first,200,28718
+main2.res:  null
+main2:  51
+main2:  null
+main2.res:  1
+main2:  41
+main2:  v5_root_12,200,0
+main2.res:  null
+main2:  37
+main2:  null
+main2.res:  
+main2:  41
+main2:  v5_frida_6,200,0
+main2.res:  null
+main2:  41
+main2:  v5_magisk_7,200,0
+main2.res:  null
+main2:  32
+main2:  null
+main2.res:  {"health":2,"level":100,"plugged":1,"present":true,"scale":100,"status":5,"telephony":"Li-ion","temperature":2,"voltage":4401}
+main2:  9
+main2:  null
+main2.res:  0
+main2:  26
+main2:  null
+main2.res:  [5,100]
+main2:  51
+main2:  null
+main2.res:  1
+main2:  11
+main2:  null
+main2.res:  1
+main2:  28
+main2:  null
+main2.res:  1675607296624
+main2:  51
+main2:  null
+main2.res:  1
+main2:  41
+main2:  v5_root_12,200,0
+main2.res:  null
+main2:  37
+main2:  null
+main2.res:  
+main2:  41
+main2:  v5_frida_6,200,0
+main2.res:  null
+main2:  41
+main2:  v5_magisk_7,200,0
+main2.res:  null
+main2:  64
+main2:  null
+main2.res:  null
+main2:  65
+main2:  null
+main2.res:  null
+main2:  32
+main2:  null
+main2.res:  {"health":2,"level":100,"plugged":1,"present":true,"scale":100,"status":5,"telephony":"Li-ion","temperature":2,"voltage":4401}
+main2:  9
+main2:  null
+main2.res:  0
+main2:  26
+main2:  null
+main2.res:  [5,100]
+main2:  51
+main2:  null
+main2.res:  1
+main2:  11
+main2:  null
+main2.res:  1
+main2:  28
+main2:  null
+main2.res:  1675607296624
+main2:  51
+main2:  null
+main2.res:  1
+main2:  41
+main2:  v5_root_12,200,0
+main2.res:  null
+main2:  37
+main2:  null
+main2.res:  
+main2:  41
+main2:  v5_frida_6,200,0
+main2.res:  null
+main2:  41
+main2:  v5_magisk_7,200,0
+main2.res:  null
+main2:  32
+main2:  null
+main2.res:  {"health":2,"level":100,"plugged":1,"present":true,"scale":100,"status":5,"telephony":"Li-ion","temperature":2,"voltage":4401}
+main2:  9
+main2:  null
+main2.res:  0
+main2:  26
+main2:  null
+main2.res:  [5,100]
+main2:  51
+main2:  null
+main2.res:  1
+main2:  11
+main2:  null
+main2.res:  1
+main2:  28
+main2:  null
+main2.res:  1675607296624
+main2:  51
+main2:  null
+main2.res:  1
+TypeError: cannot read property 'overload' of undefined
+    at hook3 (/hook.js:67)
+    at <anonymous> (/hook.js:81)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOps (frida/node_modules/frida-java-bridge/index.js:238)
+    at <anonymous> (frida/node_modules/frida-java-bridge/index.js:213)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOpsWhenReady (frida/node_modules/frida-java-bridge/index.js:232)
+    at perform (frida/node_modules/frida-java-bridge/index.js:192)
+    at main (/hook.js:82)
+    at apply (native)
+    at <anonymous> (frida/runtime/core.js:45)
+TypeError: cannot read property 'overload' of undefined
+    at hook3 (/hook.js:67)
+    at <anonymous> (/hook.js:81)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOps (frida/node_modules/frida-java-bridge/index.js:238)
+    at <anonymous> (frida/node_modules/frida-java-bridge/index.js:213)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOpsWhenReady (frida/node_modules/frida-java-bridge/index.js:232)
+    at perform (frida/node_modules/frida-java-bridge/index.js:192)
+    at main (/hook.js:82)
+    at apply (native)
+    at <anonymous> (frida/runtime/core.js:45)
+TypeError: cannot read property 'overload' of undefined
+    at hook3 (/hook.js:67)
+    at <anonymous> (/hook.js:81)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOps (frida/node_modules/frida-java-bridge/index.js:238)
+    at <anonymous> (frida/node_modules/frida-java-bridge/index.js:213)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOpsWhenReady (frida/node_modules/frida-java-bridge/index.js:232)
+    at perform (frida/node_modules/frida-java-bridge/index.js:192)
+    at main (/hook.js:82)
+    at apply (native)
+    at <anonymous> (frida/runtime/core.js:45)
+TypeError: cannot read property 'overload' of undefined
+    at hook3 (/hook.js:67)
+    at <anonymous> (/hook.js:81)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOps (frida/node_modules/frida-java-bridge/index.js:238)
+    at <anonymous> (frida/node_modules/frida-java-bridge/index.js:213)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOpsWhenReady (frida/node_modules/frida-java-bridge/index.js:232)
+    at perform (frida/node_modules/frida-java-bridge/index.js:192)
+    at main (/hook.js:82)
+    at apply (native)
+    at <anonymous> (frida/runtime/core.js:45)
+TypeError: cannot read property 'overload' of undefined
+    at hook3 (/hook.js:67)
+    at <anonymous> (/hook.js:81)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOps (frida/node_modules/frida-java-bridge/index.js:238)
+    at <anonymous> (frida/node_modules/frida-java-bridge/index.js:213)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOpsWhenReady (frida/node_modules/frida-java-bridge/index.js:232)
+    at perform (frida/node_modules/frida-java-bridge/index.js:192)
+    at main (/hook.js:82)
+    at apply (native)
+    at <anonymous> (frida/runtime/core.js:45)
+TypeError: cannot read property 'overload' of undefined
+    at hook3 (/hook.js:67)
+    at <anonymous> (/hook.js:81)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOps (frida/node_modules/frida-java-bridge/index.js:238)
+    at <anonymous> (frida/node_modules/frida-java-bridge/index.js:213)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOpsWhenReady (frida/node_modules/frida-java-bridge/index.js:232)
+    at perform (frida/node_modules/frida-java-bridge/index.js:192)
+    at main (/hook.js:82)
+    at apply (native)
+    at <anonymous> (frida/runtime/core.js:45)
+TypeError: cannot read property 'overload' of undefined
+    at hook3 (/hook.js:67)
+    at <anonymous> (/hook.js:81)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOps (frida/node_modules/frida-java-bridge/index.js:238)
+    at <anonymous> (frida/node_modules/frida-java-bridge/index.js:213)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOpsWhenReady (frida/node_modules/frida-java-bridge/index.js:232)
+    at perform (frida/node_modules/frida-java-bridge/index.js:192)
+    at main (/hook.js:82)
+    at apply (native)
+    at <anonymous> (frida/runtime/core.js:45)
+TypeError: cannot read property 'overload' of undefined
+    at hook3 (/hook.js:67)
+    at <anonymous> (/hook.js:81)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOps (frida/node_modules/frida-java-bridge/index.js:238)
+    at <anonymous> (frida/node_modules/frida-java-bridge/index.js:213)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOpsWhenReady (frida/node_modules/frida-java-bridge/index.js:232)
+    at perform (frida/node_modules/frida-java-bridge/index.js:192)
+    at main (/hook.js:82)
+    at apply (native)
+    at <anonymous> (frida/runtime/core.js:45)
+TypeError: cannot read property 'overload' of undefined
+    at hook3 (/hook.js:67)
+    at <anonymous> (/hook.js:81)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOps (frida/node_modules/frida-java-bridge/index.js:238)
+    at <anonymous> (frida/node_modules/frida-java-bridge/index.js:213)
+    at <anonymous> (frida/node_modules/frida-java-bridge/lib/vm.js:11)
+    at _performPendingVmOpsWhenReady (frida/node_modules/frida-java-bridge/index.js:232)
+    at perform (frida/node_modules/frida-java-bridge/index.js:192)
+    at main (/hook.js:82)
+    at apply (native)
+    at <anonymous> (frida/runtime/core.js:45)

@@ -1,0 +1,180 @@
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][16603][JAVA]: available
+[DEBUG][02/23/2023, 10:02:06 PM][PID:16577][main][16577][MAIN]: HELLO FridaContainer, please add code on the index.ts
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.stub.StubApp ====
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b89f4110 nMethods: 9 ====
+Error: unable to find module containing 0x75b88ce458
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: dalvik.system.DexFile ====
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x7ff6bb59c0 nMethods: 1 ====
+Error: unable to find module containing 0x75b88d05cc
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.common.busi.CustomView ====
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b89f4020 nMethods: 2 ====
+Error: unable to find module containing 0x75b88cdec4
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.ce.Interface2 ====
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b89f4050 nMethods: 7 ====
+Error: unable to find module containing 0x75b88ce424
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.stub.stub07.Stub01 ====
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b89f40f8 nMethods: 1 ====
+Error: unable to find module containing 0x75b88cad60
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.BH ====
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b89f5830 nMethods: 6 ====
+Error: unable to find module containing 0x75b88f3a90
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.BH ====
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75d18d5ba0 nMethods: 4 ====
+Error: unable to find module containing 0x7652e3ed18
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.c.a ====
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75d183a9c0 nMethods: 6 ====
+Error: unable to find module containing 0x7652e3f8c8
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.d.b ====
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75d1831840 nMethods: 18 ====
+Error: unable to find module containing 0x7652e3fbf8
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.b.a.h ====
+[INFO][02/23/2023, 10:02:06 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75d183fc40 nMethods: 3 ====
+Error: unable to find module containing 0x7652e3f730
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.b.a.a ====
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b8bb8ca0 nMethods: 1 ====
+Error: unable to find module containing 0x7652e3ef38
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.b.a.b ====
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75d183fc40 nMethods: 3 ====
+Error: unable to find module containing 0x7652e3efc0
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.b.a.c ====
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b8bb8e40 nMethods: 1 ====
+Error: unable to find module containing 0x7652e3f158
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.d.e ====
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75c65fd180 nMethods: 8 ====
+Error: unable to find module containing 0x7652e40940
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.b.a.e ====
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75d183fce0 nMethods: 3 ====
+Error: unable to find module containing 0x7652e3f1e0
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.b.a.f ====
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75d183fab0 nMethods: 3 ====
+Error: unable to find module containing 0x7652e3f378
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.jg.bh.d.d ====
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75c65fd180 nMethods: 7 ====
+Error: unable to find module containing 0x7652e40588
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.tencent.mmkv.MMKV ====
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b5e6f008 nMethods: 54 ====
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: onExit, signature: ()V, fnPtr: 0x75b5de8e2c, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0xfe2c
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: cryptKey, signature: ()Ljava/lang/String;, fnPtr: 0x75b5de8e30, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0xfe30
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: reKey, signature: (Ljava/lang/String;)Z, fnPtr: 0x75b5de8f24, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0xff24
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: checkReSetCryptKey, signature: (Ljava/lang/String;)V, fnPtr: 0x75b5de902c, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x1002c
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: pageSize, signature: ()I, fnPtr: 0x75b5de913c, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x1013c
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: mmapID, signature: ()Ljava/lang/String;, fnPtr: 0x75b5de914c, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x1014c
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: version, signature: ()Ljava/lang/String;, fnPtr: 0x75b5de91ac, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x101ac
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: lock, signature: ()V, fnPtr: 0x75b5de9258, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x10258
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: unlock, signature: ()V, fnPtr: 0x75b5de9288, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x10288
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: tryLock, signature: ()Z, fnPtr: 0x75b5de92b8, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x102b8
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: allKeys, signature: ()[Ljava/lang/String;, fnPtr: 0x75b5de92e8, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x102e8
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: removeValuesForKeys, signature: ([Ljava/lang/String;)V, fnPtr: 0x75b5de950c, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x1050c
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: clearAll, signature: ()V, fnPtr: 0x75b5de9640, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x10640
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: trim, signature: ()V, fnPtr: 0x75b5de9670, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x10670
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: close, signature: ()V, fnPtr: 0x75b5de96a0, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x106a0
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: clearMemoryCache, signature: ()V, fnPtr: 0x75b5de970c, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x1070c
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: sync, signature: (Z)V, fnPtr: 0x75b5de973c, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x1073c
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: isFileValid, signature: (Ljava/lang/String;)Z, fnPtr: 0x75b5de9780, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x10780
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: ashmemFD, signature: ()I, fnPtr: 0x75b5de9818, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x10818
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: ashmemMetaFD, signature: ()I, fnPtr: 0x75b5de984c, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x1084c
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: jniInitialize, signature: (Ljava/lang/String;I)V, fnPtr: 0x75b5de9880, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x10880
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: getMMKVWithID, signature: (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)J, fnPtr: 0x75b5de99d0, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x109d0
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: getMMKVWithIDAndSize, signature: (Ljava/lang/String;IILjava/lang/String;)J, fnPtr: 0x75b5de9c10, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x10c10
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: getDefaultMMKV, signature: (ILjava/lang/String;)J, fnPtr: 0x75b5de9d70, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x10d70
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: getMMKVWithAshmemFD, signature: (Ljava/lang/String;IILjava/lang/String;)J, fnPtr: 0x75b5de9e44, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x10e44
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: encodeBool, signature: (JLjava/lang/String;Z)Z, fnPtr: 0x75b5de9fa0, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x10fa0
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: decodeBool, signature: (JLjava/lang/String;Z)Z, fnPtr: 0x75b5dea050, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x11050
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: encodeInt, signature: (JLjava/lang/String;I)Z, fnPtr: 0x75b5dea0fc, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x110fc
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: decodeInt, signature: (JLjava/lang/String;I)I, fnPtr: 0x75b5dea1a8, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x111a8
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: encodeLong, signature: (JLjava/lang/String;J)Z, fnPtr: 0x75b5dea250, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x11250
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: decodeLong, signature: (JLjava/lang/String;J)J, fnPtr: 0x75b5dea2fc, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x112fc
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: encodeFloat, signature: (JLjava/lang/String;F)Z, fnPtr: 0x75b5dea3a4, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x113a4
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: decodeFloat, signature: (JLjava/lang/String;F)F, fnPtr: 0x75b5dea458, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x11458
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: encodeDouble, signature: (JLjava/lang/String;D)Z, fnPtr: 0x75b5dea500, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x11500
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: decodeDouble, signature: (JLjava/lang/String;D)D, fnPtr: 0x75b5dea5b4, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x115b4
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: encodeString, signature: (JLjava/lang/String;Ljava/lang/String;)Z, fnPtr: 0x75b5dea65c, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x1165c
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: decodeString, signature: (JLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;, fnPtr: 0x75b5dea788, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x11788
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: encodeSet, signature: (JLjava/lang/String;[Ljava/lang/String;)Z, fnPtr: 0x75b5dea8c4, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x118c4
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: decodeStringSet, signature: (JLjava/lang/String;)[Ljava/lang/String;, fnPtr: 0x75b5deaa50, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x11a50
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: encodeBytes, signature: (JLjava/lang/String;[B)Z, fnPtr: 0x75b5deaccc, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x11ccc
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: decodeBytes, signature: (JLjava/lang/String;)[B, fnPtr: 0x75b5deaea8, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x11ea8
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: containsKey, signature: (JLjava/lang/String;)Z, fnPtr: 0x75b5deaff0, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x11ff0
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: count, signature: (J)J, fnPtr: 0x75b5deb094, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x12094
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: totalSize, signature: (J)J, fnPtr: 0x75b5deb0a8, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x120a8
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: removeValueForKey, signature: (JLjava/lang/String;)V, fnPtr: 0x75b5deb0bc, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x120bc
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: valueSize, signature: (JLjava/lang/String;Z)I, fnPtr: 0x75b5deb14c, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x1214c
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: setLogLevel, signature: (I)V, fnPtr: 0x75b5deb1fc, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x121fc
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: setCallbackHandler, signature: (ZZ)V, fnPtr: 0x75b5deb204, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x12204
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: createNB, signature: (I)J, fnPtr: 0x75b5deb260, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x12260
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: destroyNB, signature: (JI)V, fnPtr: 0x75b5deb2c8, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x122c8
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: writeValueToNB, signature: (JLjava/lang/String;JI)I, fnPtr: 0x75b5deb2d0, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x122d0
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: setWantsContentChangeNotify, signature: (Z)V, fnPtr: 0x75b5deb38c, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x1238c
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: checkContentChangedByOuterProcess, signature: ()V, fnPtr: 0x75b5deb3a8, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x123a8
+[INFO][02/23/2023, 10:02:07 PM][PID:16577][main][16577][fridaRegstNtv]: name: checkProcessMode, signature: (J)Z, fnPtr: 0x75b5deb3d8, modulename: libmmkv.so -> base: 0x75b5dd9000, offset: 0x123d8
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.sina.weibo.wlog.WLogImpl ====
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b37622c0 nMethods: 5 ====
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][main][16577][fridaRegstNtv]: name: nativeCreateWLogManager, signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Z)J, fnPtr: 0x75b371f7ac, modulename: libwlog.so -> base: 0x75b3714000, offset: 0xb7ac
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][main][16577][fridaRegstNtv]: name: nativeStore, signature: (JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V, fnPtr: 0x75b371feec, modulename: libwlog.so -> base: 0x75b3714000, offset: 0xbeec
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][main][16577][fridaRegstNtv]: name: nativeUpload, signature: (JLjava/lang/String;Ljava/lang/String;)V, fnPtr: 0x75b3720378, modulename: libwlog.so -> base: 0x75b3714000, offset: 0xc378
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][main][16577][fridaRegstNtv]: name: nativeGetSdkVersion, signature: (J)Ljava/lang/String;, fnPtr: 0x75b3720570, modulename: libwlog.so -> base: 0x75b3714000, offset: 0xc570
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][main][16577][fridaRegstNtv]: name: nativeGetToken, signature: (JZ)Ljava/lang/String;, fnPtr: 0x75b3720608, modulename: libwlog.so -> base: 0x75b3714000, offset: 0xc608
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][ZIDThreadPoolExecutor1][16653][fridaRegstNtv]: ==== class: com.umeng.umzid.Spy ====
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][ZIDThreadPoolExecutor1][16653][fridaRegstNtv]: ==== methods: 0x75b32d2090 nMethods: 1 ====
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][ZIDThreadPoolExecutor1][16653][fridaRegstNtv]: name: getNativeID, signature: ()Ljava/lang/String;, fnPtr: 0x75b3291a74, modulename: libumeng-spy.so -> base: 0x75b328a000, offset: 0x7a74
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][DefaultDispatcher-worker-3][16627][fridaRegstNtv]: ==== class: com.netease.nis.sdkwrapper.Utils ====
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][DefaultDispatcher-worker-3][16627][fridaRegstNtv]: ==== methods: 0x75b10e40c0 nMethods: 1 ====
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][DefaultDispatcher-worker-3][16627][fridaRegstNtv]: name: rL, signature: ([Ljava/lang/Object;)Ljava/lang/Object;, fnPtr: 0x75b108cddc, modulename: libsecsdk.so -> base: 0x75b1082000, offset: 0xaddc
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.sina.oasis.main.SplashActivity ====
+[INFO][02/23/2023, 10:02:08 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b8b76800 nMethods: 1 ====
+Error: unable to find module containing 0x7652e3b4c8
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:09 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: cn.ezandroid.ezpermission.PermissionProxyActivity ====
+[INFO][02/23/2023, 10:02:09 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b8bdde60 nMethods: 2 ====
+Error: unable to find module containing 0x7652e3b000
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)
+[INFO][02/23/2023, 10:02:09 PM][PID:16577][DefaultDispatcher-worker-2][16626][fridaRegstNtv]: ==== class: com.weibo.ssosdk.LibHelper ====
+[INFO][02/23/2023, 10:02:09 PM][PID:16577][DefaultDispatcher-worker-2][16626][fridaRegstNtv]: ==== methods: 0x75a722a040 nMethods: 1 ====
+[INFO][02/23/2023, 10:02:09 PM][PID:16577][DefaultDispatcher-worker-2][16626][fridaRegstNtv]: name: deal, signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;, fnPtr: 0x75a7210e60, modulename: libwind1.so -> base: 0x75a7205000, offset: 0xbe60
+[INFO][02/23/2023, 10:02:09 PM][PID:16577][SentryAsyncConnection-0][16719][fridaRegstNtv]: ==== class: com.weibo.xvideo.NativeApi ====
+[INFO][02/23/2023, 10:02:09 PM][PID:16577][SentryAsyncConnection-0][16719][fridaRegstNtv]: ==== methods: 0x75a5f39100 nMethods: 4 ====
+[INFO][02/23/2023, 10:02:09 PM][PID:16577][SentryAsyncConnection-0][16719][fridaRegstNtv]: name: s, signature: ([BZ)Ljava/lang/String;, fnPtr: 0x75a5eed6cc, modulename: liboasiscore.so -> base: 0x75a5edc000, offset: 0x116cc
+[INFO][02/23/2023, 10:02:09 PM][PID:16577][SentryAsyncConnection-0][16719][fridaRegstNtv]: name: e, signature: (Ljava/lang/String;)Ljava/lang/String;, fnPtr: 0x75a5eedaf4, modulename: liboasiscore.so -> base: 0x75a5edc000, offset: 0x11af4
+[INFO][02/23/2023, 10:02:09 PM][PID:16577][SentryAsyncConnection-0][16719][fridaRegstNtv]: name: d, signature: (Ljava/lang/String;)Ljava/lang/String;, fnPtr: 0x75a5eedcd8, modulename: liboasiscore.so -> base: 0x75a5edc000, offset: 0x11cd8
+[INFO][02/23/2023, 10:02:09 PM][PID:16577][SentryAsyncConnection-0][16719][fridaRegstNtv]: name: dg, signature: (Ljava/lang/String;Z)Ljava/lang/String;, fnPtr: 0x75a5eee20c, modulename: liboasiscore.so -> base: 0x75a5edc000, offset: 0x1220c
+[INFO][02/23/2023, 10:02:10 PM][PID:16577][main][16577][fridaRegstNtv]: ==== class: com.weibo.xvideo.module.login.LoginActivity ====
+[INFO][02/23/2023, 10:02:10 PM][PID:16577][main][16577][fridaRegstNtv]: ==== methods: 0x75b8a68960 nMethods: 1 ====
+Error: unable to find module containing 0x7652e3eaf8
+    at value (frida/runtime/core.js:280)
+    at onEnter (utils/android/jnimgr.ts:299)

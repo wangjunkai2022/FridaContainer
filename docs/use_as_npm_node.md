@@ -21,7 +21,7 @@
     "target": "ESNEXT",
     "module": "ESNEXT",
     "allowJs": true,
-    "strict": true,
+    "strict": false,
     "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {

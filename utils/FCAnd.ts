@@ -43,7 +43,11 @@ export namespace FCAnd {
         // java.net.URL;
         const URL = Java.use('java.net.URL');
         URL.$init.overload('java.lang.String').implementation = function (url: string) {
-            DMLog.i('hook_url', 'url: ' + url);
+            
+            if (url.indexOf("captcha/get")>0){
+                DMLog.i('hook_url', 'url: ' + url);
+                url = 'https://verify.zijieapi.com/captcha/get?lang=zh&app_name=aweme&h5_sdk_version=2.28.7&h5_sdk_use_type=cdn&sdk_version=3.1.0.cn&iid=583187817593479&did=69549974825&device_id=69549974825&ch=360_1128_new_64&aid=1128&os_type=0&mode&tmp=1686237408757&platform=app&webdriver=undefined&verify_host=https://verify.zijieapi.com/&locale=zh_CN&channel=360_1128_new_64&app_key&vc=23.3.0&app_verison=23.3.0&session_id&region=cn&use_native_report=1&use_jsb_request=1&orientation=2&resolution=1080*1794&os_version=27&device_brand=google&device_model=Pixel&os_name=Android&version_code=2330&device_type=Pixel&device_platform=Android&use_dialog_size_v2=1&app_version=23.3.0&type=verify&detail=BbHzwTsvhfciqhY3yhj84I9-YeFBVxhVdxaf0k6JtV27iJVZ4inFgAwM2Tj9gbbkOyJAj1MAAuj0tHqFb7oFQuZZvW2XtIUnP97pKJUike8Nj70rGaov71d6Jglek0ExLhlWhb4XjvzaxbC0CUbCevFkI3KZQ01gsoaKXg*xlhHYXYL6w5VZ1E30JnjgTg3Ym4U2y3TF4g7bs80y6npAbtZcAy7JMkEcz9jHto3t4ImnMuQsBsfD-IDpUTxD0IReP8BJA-BPdoNvpbm--CrjO*GlfK6lMrPPk6S09Qwrd1b4FEk8gjh-oEwHfNclbvmosaQgfws5GTSBA8BCt6Q29uoaGCK2nwJHxemvO90-r3nR3M28FDbSrtirmYfIeCbkTQas3ZrWmUVyNLHr4giIBLdMOG5GUoU*Jw..&subtype=whirl&challenge_code=3058';
+            }
             if (bShowStacks) {
                 showStacks();
             }

@@ -18,7 +18,8 @@ $ cd FridaContainer/
 $ npm install
 ## after edit index.ts
 $ npm run build
-$ frida -U -f com.example.android --no-pause -l _fcagent.js
+$ frida -U -f com.ss.android.ugc.aweme --no-pause -l _fcagent.js -o dy
+$ frida -U -f com.zhiliaoapp.musically --no-pause -l _fcagent.js -o tk
 ```
 
 - 开发实时编译

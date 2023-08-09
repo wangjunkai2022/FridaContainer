@@ -9,17 +9,16 @@ import {DMLog} from "./utils/dmlog";
 import {FCCommon} from "./utils/FCCommon";
 // import {DianPing} from "./agent/dp/dp";
 import {FCAnd} from "./utils/FCAnd";
+import {DY} from "./utils/android/dy/hook";
+import {DW} from "./utils/android/dewu/hook";
+import {TK} from "./utils/android/tiktok/hook";
 
 function main() {
     DMLog.d('MAIN', 'HELLO FridaContainer, please add code on the index.ts');
-    // FCAnd.Anti.anti_ptrace();
-    // FCAnd.Anti.anti_fgets();
-    // and.anti.Anti.anti_fgets();
+    // FCAnd.anti.anti_ptrace();
+    // FCAnd.anti.anti_fgets();
 
     // FCAnd.anti.anti_debug();
-    /// dp
-    // DianPing.anti_debug();
-    // DianPing.hook_cx_stacks();
     ///
     // FCAnd.showStacks();
     // FCAnd.dump_dex_common();
@@ -34,14 +33,10 @@ function main() {
     // coord: (0,203,25) | addr: Lcom.dianping.nvnetwork.tunnel.Encrypt.SocketSecureManager;->getB2keyByB2(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; | loc: ?
     // FCAnd.traceArtMethods(['E:com.dianping.nvnetwork.tunnel.Encrypt.SocketSecureManager'], null, "122,108,111,103,46,98,105,110");  // "zlog.bin"
     // FCAnd.anti.anti_ssl_unpinning();
-    // DianPing.hook_stuffs();
-    // DianPing.hook_net();
-    // DianPing.modify_devinfo();
-    // DianPing.hook_stuffs();
     // FCAnd.hook_uri(true);
     // FCAnd.hook_url(true);
     // FCAnd.jni.traceAllJNISimply();
-    // FCAnd.traceArtMethods(['M:retrofit2']);
+    // FCAnd.traceArtMethods(['M:com.shizhuang.duapp.modules.home.model.viewmodel.LandingNativeViewModel']);
     // rpc.exports = {
     //     test() {
     //         Java.perform(() => {
@@ -49,13 +44,34 @@ function main() {
     //         });
     //     }
     // }
+
+    // FCAnd.hook_Map("nonce",true);
+
+    // DW.fetchData();
+    // DY.hoot_so();
+    // FCAnd.jni.hook_registNatives()
+
+    // DY.hook_jsonObject();
+
+    TK.hook_sub_bdd5c();
+    // TK.hook_get_bytes();
+    // DY.hook_get_bytes();
+    
+    // FCAnd.jni.hook_registNatives();
+
+}
+
+function start(){
+    Java.perform(function () {
+        main();
+    });
 }
 
 if (Java.available) {
     DMLog.i("JAVA", "available");
-    Java.perform(function () {
-        main();
-    });
+    setImmediate(start);
+    // setInterval(start,1000);
+    // setTimeout(start,2000);
 }
 
 if (ObjC.available) {
