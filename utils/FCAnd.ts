@@ -173,6 +173,147 @@ export namespace FCAnd {
         fridaUnpack.unpack_common();
     }
 
+    /**
+     * 以 loadClass 方式 dump dex
+     * 调用 FCAnd.dump_dex_loadAllClass() 即可
+     * 当程序启动完成后，
+     * 调用 rpc.exports.ddc() 即可完成 dump dex
+     */
+    export function dump_dex_loadAllClass() {
+        let tag = 'dd_loadAllClass';
+        var dex_maps: Record<string, number> = {};
+        var module = Process.findModuleByName("libart.so")!;
+        var addr_DefineClass = null;
+        var symbols = module.enumerateSymbols();
+        for (var index = 0; index < symbols.length; index++) {
+            var symbol = symbols[index];
+            var symbol_name = symbol.name;
+            //这个DefineClass的函数签名是Android9的
+            //_ZN3art11ClassLinker11DefineClassEPNS_6ThreadEPKcmNS_6HandleINS_6mirror11ClassLoaderEEERKNS_7DexFileERKNS9_8ClassDefE
+            if (symbol_name.indexOf("ClassLinker") >= 0 &&
+                symbol_name.indexOf("DefineClass") >= 0 &&
+                symbol_name.indexOf("Thread") >= 0 &&
+                symbol_name.indexOf("DexFile") >= 0) {
+                DMLog.i(tag, `${symbol_name} : ${symbol.address}`);
+                addr_DefineClass = symbol.address;
+            }
+        }
+        DMLog.i(tag, `DefineClass: ${addr_DefineClass}`);
+        if (addr_DefineClass) {
+            Interceptor.attach(addr_DefineClass, {
+                onEnter: function (args) {
+                    var dex_file = args[5];
+                    //ptr(dex_file).add(Process.pointerSize) is "const uint8_t* const begin_;"
+                    //ptr(dex_file).add(Process.pointerSize + Process.pointerSize) is "const size_t size_;"
+                    var base = dex_file.add(Process.pointerSize).readPointer();
+                    var size = dex_file.add(Process.pointerSize + Process.pointerSize).readUInt();
+
+                    if (dex_maps[String(base)] == undefined) {
+                        dex_maps[String(base)] = size;
+                        DMLog.i(tag, `hook_dex: ${base}, ${size}`);
+                    }
+                },
+                onLeave: function (retval) {
+                }
+            });
+        }
+
+        function dump_dex() {
+            // load_all_class();
+            loadAllClass2();
+            let tag = 'dump_dex';
+            for (var base in dex_maps) {
+                var size = dex_maps[base];
+                // console.log(base);
+
+                var magic = ptr(base).readCString();
+                if (null != magic && magic.indexOf("dex") == 0) {
+                    var process_name = FCAnd.getProcessName();
+                    DMLog.i(tag, "process_name: " + process_name);
+                    if (process_name != "-1") {
+                        var dex_path = "/data/data/" + process_name + "/files/" + base + "_" + size.toString(16) + ".dex";
+                        DMLog.i(tag, "dex_path: " + dex_path);
+                        var fd = new File(dex_path, "wb");
+                        if (fd && fd != null) {
+                            var dex_buffer = ptr(base).readByteArray(size);
+                            if (null != dex_buffer) {
+                                fd.write(dex_buffer);
+                                fd.flush();
+                            }
+                            fd.close();
+                            DMLog.i(tag, "dump dex success: " + dex_path);
+                        }
+                    }
+                }
+            }
+        }
+
+        function loadAllClass2() {
+            let tag = 'loadAllClass2';
+            Java.perform(function () {
+                DMLog.i(tag, "---------------Java.enumerateClassLoaders");
+                Java.enumerateClassLoadersSync().forEach(function (loader) {
+                    try {
+                        loadAllClassCore(loader);
+                    } catch (e) {
+                        DMLog.e(tag, "Java.enumerateClassLoaders error:" + e);
+                    }
+                });
+            });
+
+            function loadAllClassCore(loader: any) {
+                let tag = 'loadAllClassCore';
+                var clstr = loader.$className.toString();
+                DMLog.i(tag, 'classloader: ' + clstr);
+                var class_BaseDexClassLoader = Java.use("dalvik.system.BaseDexClassLoader");
+                var pathcl = Java.cast(loader, class_BaseDexClassLoader);
+                DMLog.i(tag, ".pathList: " + pathcl.pathList.value);
+                var class_DexPathList = Java.use("dalvik.system.DexPathList");
+                var dexPathList = Java.cast(pathcl.pathList.value, class_DexPathList);
+                DMLog.i(tag, ".dexElements: " + dexPathList.dexElements.value.length);
+
+                var class_DexFile = Java.use("dalvik.system.DexFile");
+                var class_DexPathList_Element = Java.use("dalvik.system.DexPathList$Element");
+                for (var i = 0; i < dexPathList.dexElements.value.length; i++) {
+                    var dexPathList_Element = Java.cast(dexPathList.dexElements.value[i], class_DexPathList_Element);
+                    // console.log(".dexFile:", dexPathList_Element.dexFile.value);
+                    if (dexPathList_Element.dexFile.value) {
+                        //可能为空
+                        var dexFile = Java.cast(dexPathList_Element.dexFile.value, class_DexFile);
+                        var mcookie = dexFile.mCookie.value;
+                        // console.log(".mCookie", dexFile.mCookie.value);
+                        if (dexFile.mInternalCookie.value) {
+                            // console.log(".mInternalCookie", dexFile.mInternalCookie.value);
+                            mcookie = dexFile.mInternalCookie.value;
+                        }
+                        var classNameArr = dexPathList_Element.dexFile.value.getClassNameList(mcookie);
+                        DMLog.i(tag, "DexFile.getClassNameList.length:" + classNameArr.length);
+                        DMLog.i(tag, "     |------------Enumerate ClassName Start");
+                        for (var i = 0; i < classNameArr.length; i++) {
+                            // DMLog.w(tag, "      " + classNameArr[i]);
+                            try {
+                                loader.loadClass(classNameArr[i]);
+                            } catch (e) {
+                                DMLog.w(tag, "loadClass warning:" + e);
+                            }
+                            // if (classNameArr[i].indexOf(TestCalss) > -1) {
+                            //     loadClassAndInvoke(cl, classNameArr[i]);
+                            // }
+                        }
+                        DMLog.i(tag, "     |------------Enumerate ClassName End");
+                    }
+                }
+
+            }
+        }
+
+        rpc.exports = {
+            ddc() {
+                dump_dex();
+            }
+        }
+    }
+
     export function traceLoadlibrary() {
         const dlopen_ptr = Module.findExportByName(null, 'dlopen');
         if (null != dlopen_ptr) {
@@ -253,6 +394,21 @@ export namespace FCAnd {
             result += jbytes[i].toString(16);
         }
         return result;
+    }
+
+
+    /**
+     * 打印 java.util.HashMap
+     * @param data
+     */
+    export function printHashMap(data: any) {
+        let result = Java.cast(data, Java.use('java.util.HashMap'));
+        let keys = result.keySet().toArray(); // 获取键集合并转换为数组
+        for (let i = 0; i < keys.length; i++) {
+            let key = keys[i];
+            let value = result.get(key); // 获取对应的值
+            DMLog.i('printHashMap', 'Key: ' + key.toString() + ', Value: ' + value.toString());
+        }
     }
 
     /**
@@ -401,7 +557,8 @@ export namespace FCAnd {
                                 });
                                 return retval;
                             }
-                        } catch (e : any) {
+                        }
+                        catch (e: any) {
                             DMLog.d(tag, 'overload.implementation exception:\t' + overload.methodName + "\t" + e.toString());
                         }
                     });
@@ -438,7 +595,8 @@ export namespace FCAnd {
                             return retval;
                         }
                     });
-                } catch (e) {
+                }
+                catch (e) {
                 }
             }
         }
@@ -461,7 +619,8 @@ export namespace FCAnd {
         let GsonBuilder = null;
         try {
             GsonBuilder = Java.use('com.google.gson.GsonBuilder');
-        } catch (e) {
+        }
+        catch (e) {
             FCAnd.registGson();
             GsonBuilder = Java.use('com.google.gson.GsonBuilder');
         }
@@ -473,7 +632,8 @@ export namespace FCAnd {
                     .setLenient()
                     .create();
                 resstr = gson.toJson(obj);
-            } catch (e : any) {
+            }
+            catch (e: any) {
                 DMLog.e('gson.toJson', 'exceipt: ' + e.toString());
                 resstr = FCAnd.parseObject(obj);
             }
@@ -504,7 +664,8 @@ export namespace FCAnd {
                 res[field.getName()] = fdata;
             }
             return JSON.stringify(res);
-        } catch (e : any) {
+        }
+        catch (e: any) {
             return "parseObject except: " + e.toString();
         }
 
@@ -525,7 +686,8 @@ export namespace FCAnd {
         try {
             let dexpath = '/data/local/tmp/fclibs/gson.jar';
             Java.openClassFile(dexpath).load();
-        } catch (e) {
+        }
+        catch (e) {
             DMLog.e('registGson', 'exception, please try to run `setupAndorid.py`')
         }
 
@@ -573,7 +735,8 @@ export namespace FCAnd {
                     const useCls = clsFactory.use(clsname);
                     DMLog.e('loadClass', 'name: ' + name);
                     callback(useCls);
-                } catch (e) {
+                }
+                catch (e) {
                     DMLog.e('useWhenLoadClass', 'exception: ' + e);
                 }
             }
@@ -599,11 +762,13 @@ export namespace FCAnd {
                     let result = clsFactory.use(clsname);
                     DMLog.w(tag, JSON.stringify(result));
                     callback(result);
-                } catch (e) {
+                }
+                catch (e) {
                     DMLog.e(tag, `${clsname} not found: ${e}`);
                 }
             }
-        } catch (e : any) {
+        }
+        catch (e: any) {
             DMLog.e(tag, e.toString());
         }
 
@@ -626,7 +791,8 @@ export namespace FCAnd {
                 let result = clsFactory.use(clsname);
                 DMLog.w(tag, JSON.stringify(result));
                 callback(result);
-            } catch (e) {
+            }
+            catch (e) {
                 DMLog.e(tag, `${clsname} not found: ${e}`);
             }
         }
@@ -675,7 +841,8 @@ export namespace FCAnd {
                             DMLog.i(tag, '\n');
                             DMLog.i(tag, JSON.stringify(data));
                             FCAnd.showNativeStacks(this.context);
-                        } catch (err : any) {
+                        }
+                        catch (err: any) {
                             DMLog.e(tag, err);
                         }
                     },
@@ -749,6 +916,19 @@ export namespace FCAnd {
      */
     export function enumerateClassLoadersAndUse(clsname: string, callback: (cls: Java.Wrapper) => void) {
         const tag = 'enumerateClassLoadersAndUse';
+        enumerateClassLoadersAndGetFactory(clsname, function (cf) {
+            try {
+                let cls = cf.use(clsname);
+                callback(cls);
+            }
+            catch (e: any) {
+                DMLog.e(tag, `use ${clsname} excepted: ${e}`);
+            }
+        });
+    }
+
+    export function enumerateClassLoadersAndGetFactory(clsname: string, callback: (factory: Java.ClassFactory) => void) {
+        const tag = 'enumerateClassLoadersAndGetFactory';
         Java.enumerateClassLoaders({
             onMatch(loader) {
                 try {
@@ -757,13 +937,11 @@ export namespace FCAnd {
                         DMLog.i(tag, "found cls: " + cls);
 
                         let cf = Java.ClassFactory.get(loader);
-
-                        let cls1 = cf.use(clsname);
-                        callback(cls1);
+                        callback(cf);
                     }
-
-                } catch (e : any) {
-                    DMLog.e(tag, e.toString());
+                }
+                catch (e: any) {
+                    DMLog.w(tag, `classloader: ${loader} not found:${e.toString()}`);
                 }
             },
             onComplete() {
@@ -803,6 +981,97 @@ export namespace FCAnd {
                     so_listener.detach();
                 }
             }
+        });
+    }
+
+    /**
+     * 返回C++方法的 pretty name
+     * 例如：_Z4hahaii -> haha(int, int)
+     * let prettyname = FCAnd.prettyMethod_C("_Z4hahaii");
+     * @param name
+     */
+    export function prettyMethod_C(name: string) {
+        let ptr__cxa_demangle = Module.findExportByName("libc++.so", "__cxa_demangle");
+        if (null == ptr__cxa_demangle) {
+            DMLog.e("libc++.so", "__cxa_demangle not found");
+            return;
+        }
+        let max_size = 0x200;
+        let addr = Memory.alloc(max_size);
+        let buffaddr = Memory.alloc(max_size);
+        let buffsize = Memory.alloc(Process.pointerSize);
+        let status = Memory.alloc(Process.pointerSize);
+
+        addr.writeUtf8String(name);
+        buffsize.writeUInt(max_size);
+        status.writeUInt(0);
+        let func_cxa_demangle = new NativeFunction(ptr__cxa_demangle, 'pointer', ['pointer', 'pointer', 'pointer', 'pointer']);
+        func_cxa_demangle(addr, buffaddr, buffsize, status);
+        let result = buffaddr.readCString();
+        return result;
+    }
+
+    /**
+     * 返回 Java 方法的 pretty name
+     * ar classname = 'java/lang/String';
+     * var env = Java.vm.getEnv();
+     * var cla = env.findClass(classname);
+     * DMLog.i("prettyMethod_Jni", "clazz:" + cla);
+     * var methodId = env.getMethodId(cla, "toString", "()Ljava/lang/String;");
+     * DMLog.i("prettyMethod_Jni", "methodId:" + methodId);
+     * let ptyName = FCAnd.prettyMethod_Jni(methodId, 1);
+     * DMLog.i("prettyMethod_Jni", "prettyMethod_Jni res: " + ptyName);
+     * @param methodId
+     * @param withSignature 1: 包含签名，0: 不包含签名
+     */
+    export function prettyMethod_Jni(methodId: any, withSignature: number) {
+        let result = FCCommon.newStdString();
+        // @ts-ignore
+        Java.api['art::ArtMethod::PrettyMethod'](result, methodId, withSignature);
+        return result.disposeToString();
+    }
+
+    /**
+     * 获取进程名
+     */
+    export function getProcessName() {
+        var openPtr = Module.getExportByName('libc.so', 'open');
+        var open = new NativeFunction(openPtr, 'int', ['pointer', 'int']);
+
+        var readPtr = Module.getExportByName("libc.so", "read");
+        var read = new NativeFunction(readPtr, "int", ["int", "pointer", "int"]);
+
+        var closePtr = Module.getExportByName('libc.so', 'close');
+        var close = new NativeFunction(closePtr, 'int', ['int']);
+
+        var path = Memory.allocUtf8String("/proc/self/cmdline");
+        var fd = open(path, 0);
+        if (fd != -1) {
+            var buffer = Memory.alloc(0x1000);
+
+            var readsize = read(fd, buffer, 0x1000);
+            close(fd);
+            let result = buffer.readCString();
+            return result;
+        }
+
+        return null;
+    }
+
+    /**
+     * 监听 svc 地址调用，并打印堆栈
+     * @param base
+     * @param address_list  需要配合 python/android/search_svc.py 脚本生成的地址列表，传入 address_list
+     *                      例如：['0x4826c', '0x487bc', '0x48dc4', '0x496d4', '0x49880', '0x499d0']
+     */
+    export function watch_svc_address_list(base: NativePointer, address_list: string[]) {
+        address_list.forEach((addr) => {
+            let addr_offset = parseInt(addr, 16);
+            Interceptor.attach(base.add(addr_offset), {
+                onEnter: function (args) {
+                    FCAnd.showNativeStacks(this.context);
+                }
+            });
         });
     }
 }

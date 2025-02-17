@@ -37,10 +37,11 @@ $ python setupAndroid.py
 ```
 
 ### 1.2 作为 npm node 模块使用
+作为 npm ndoe 使用在新版本中会有问题，具体原因目前还没有时间看，建议用上面的源码推荐方式使用。
 
-支持作为 npm node 模拟直接嵌入 typescript 项目中。
+~~支持作为 npm node 模拟直接嵌入 typescript 项目中。~~
 
-[详细引入方式请看这里](docs/use_as_npm_node.md)
+~~[详细引入方式请看这里](docs/use_as_npm_node.md)~~
 
 ### 1.3 赘述几句我当前的使用习惯
 
@@ -94,8 +95,14 @@ $ python setupAndroid.py
 由于引用较多，且时间比较久了，也很难都列出来，以后慢慢列举吧。
 感谢无私的代码分享者们。
 
+<details>
+<summary>感谢参考与引用</summary>
+
 - [universal-android-ssl-pinning-bypass-with-frida](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/)
 - [rida-multiple-unpinning](https://codeshare.frida.re/@akabe1/frida-multiple-unpinning/)
 - [art methods tracer](https://github.com/hluwa/ZenTracer)
 - [JNI-Frida-Hook](https://github.com/Areizen/JNI-Frida-Hook)
 - [jnitrace](https://github.com/chame1eon/jnitrace)
+- [frida_hook_libart](https://github.com/lasting-yang/frida_hook_libart)
+- [使用Frida简单实现函数粒度脱壳](https://bbs.kanxue.com/thread-260540.htm)
+</details>
