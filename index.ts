@@ -12,6 +12,10 @@ import {FCAnd} from "./utils/FCAnd";
 import {DY} from "./utils/android/dy/hook";
 import {DW} from "./utils/android/dewu/hook";
 import {TK} from "./utils/android/tiktok/hook";
+import { Console } from "console";
+import { hook_hot51 } from "./agent/hot51";
+import { hook_春雨 } from "./agent/hook_春雨";
+import { hook_小红帽 } from "./agent/小红帽";
 
 function main() {
     DMLog.d('MAIN', 'HELLO FridaContainer, please add code on the index.ts');
@@ -53,12 +57,13 @@ function main() {
 
     // DY.hook_jsonObject();
 
-    TK.hook_sub_bdd5c();
+    // TK.hook_sub_bdd5c();
     // TK.hook_get_bytes();
     // DY.hook_get_bytes();
     
     // FCAnd.jni.hook_registNatives();
-
+    // hook_hot51()
+    hook_小红帽()
 }
 
 function start(){
@@ -74,10 +79,10 @@ if (Java.available) {
     // setTimeout(start,2000);
 }
 
-if (ObjC.available) {
-    DMLog.i("ObjC", "available");
-    FCCommon.printModules();
-    FCCommon.dump_module("Hopper Disassembler v4", "/Users/dmemory/Downloads/");
-}
+// if (ObjC.available) {
+//     DMLog.i("ObjC", "available");
+//     FCCommon.printModules();
+//     FCCommon.dump_module("Hopper Disassembler v4", "/Users/dmemory/Downloads/");
+// }
 
 
