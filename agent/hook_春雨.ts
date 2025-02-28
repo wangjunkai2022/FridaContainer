@@ -40,13 +40,14 @@ function hook_春雨OS(){
     //     }
     // })
 }
-
+let yoyo_dex = Java.openClassFile("yoyo.dex")
 function get_yoyo_tools() {
-    var YouTools = Java.use("com.youyou.YouTools")
-    if (YouTools){
-        return YouTools
+    try {
+        var YouTools = Java.use("com.youyou.YouTools")
     }
-    Java.openClassFile("./yoyo.dex").load();
+    catch(error){
+        yoyo_dex.load();
+    }
     var YouTools = Java.use("com.youyou.YouTools")
     return YouTools
 }
